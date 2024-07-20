@@ -1,0 +1,88 @@
+.btn {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    // flex-direction: row;
+    width: fit-content;
+    // padding: 11px 37px;
+    height: 50px;
+
+
+    // HOME-PAGE-TYPO
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+
+    border-radius: 30px;
+    transition-duration: 400ms;
+    cursor: pointer;
+
+    &.primary-btn {
+
+        background-color: $button-primary-color;
+        color: $text-seconadary-color;
+        border: 1px solid transparent;
+        padding: 0 36.2px;
+
+        &:hover {
+            background-color: #dda720;
+        }
+    }
+
+
+    &.secondary-btn {
+        background-color: transparent;
+        color: $text-primary-color;
+        border: 2px solid rgba(255, 255, 255, 0.29);
+        padding: 0 35px;
+
+        &:hover {
+            background-color: $button-secondary-color;
+            color: $text-seconadary-color ;
+
+        }
+    }
+}
+
+
+.circular-btn {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    // width: 58px;
+    padding: 0 24px;
+    height: 58px;
+    background-color: rgba(196, 196, 196, 0.1);
+    justify-content: center;
+    border-radius: 29px;
+    transition-duration: 550ms;
+
+    &:hover {
+        background-color: $cir-btn-hover-color;
+
+        img {
+            filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(101deg) brightness(102%) contrast(103%);
+        }
+    }
+}
+
+
+.btn-add {
+    position: relative;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+    border-radius: 17.5px;
+    width: 35px;
+    height: 35px;
+    background-color: $text-seconadary-color;
+    box-shadow: 0px 7px 15px -1px rgba(0, 0, 0, 0.4);
+
+    img {
+        border-radius: 17.5px;
+        position: absolute;
+        z-index: 2;
+    }
+}

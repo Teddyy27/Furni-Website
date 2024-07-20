@@ -1,0 +1,287 @@
+.hero-section {
+    background-color: $primary-color;
+
+    .container {
+        .header {
+            a {
+                font-family: Inter;
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 38.73px;
+                text-align: left;
+
+            }
+
+            .menu {
+                .menu-item {
+                    color: $text-primary-color;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19.36px;
+                    text-align: left;
+                    opacity: 50%;
+                }
+            }
+
+        }
+        p {
+            color: $text-primary-color;
+            font-family: Inter;
+            font-size: 54px;
+            font-weight: 600;
+            line-height: 65.35px;
+            text-align: left;
+
+        }
+    }
+}
+
+
+.section-1 {
+    background-color: #EFF2F1;
+
+    .about-items {
+        font-family: Inter;
+
+        h3 {
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 41.15px;
+            text-align: left;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+
+        }
+
+    }
+
+    .shop-items {
+        font-family: Inter;
+
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+
+        }
+
+
+    }
+}
+
+
+// ---------------------page-2
+
+.section-2 {
+    background-color: #EFF2F1;
+    font-family: Inter;
+    text-align: left;
+
+    .why-choose-us {
+        h3 {
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 41px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+    }
+
+    .fast-and-free-shipping,
+    .easy-to-shop,
+    .support,
+    .hassle-free-returns {
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 19px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+}
+
+// ----------------------------------page-3
+
+.section-3 {
+    background-color: #EFF2F1;
+    text-align: left;
+    font-family: Inter;
+
+    h3 {
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 41px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    h5 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+}
+
+// ----------------------------------page-4
+
+.section-4 {
+    background-color: #EFF2F1;
+    text-align: left;
+    font-family: Inter;
+
+    .item-menu {
+        h4 {
+            color: #000000;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+
+        a {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #6A6A6A
+        }
+    }
+
+    .testimonial {
+        text-align: center;
+
+        h2 {
+            color: $text-seconadary-color;
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 41px;
+
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32px;
+        }
+    }
+
+    .profile {
+        text-align: center;
+        color: $text-seconadary-color;
+
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.78px;
+
+        }
+
+        h5 {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 32px;
+        }
+    }
+}
+
+//--------------------------------------- page-5
+
+.section-5 {
+    background-color: #EFF2F1;
+    font-family: Inter;
+    text-align: left;
+    color: $text-seconadary-color;
+
+    h3 {
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 41px;
+    }
+
+    a {
+        color: $text-seconadary-color;
+        text-decoration: 3px solid black underline;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 41px;
+        cursor: pointer;
+    }
+}
+
+
+.section-6 {
+    background-color: white;
+    text-align: left;
+    font-family: Inter;
+
+    h4 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.78px;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38.73px;
+    }
+
+    p {
+        color: #6A6A6A;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    a {
+        color: #6A6A6A;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .terms-condition{
+        a {
+            text-decoration: none;
+            color: #6A6A6A;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    
+}
