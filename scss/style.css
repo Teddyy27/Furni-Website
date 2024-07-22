@@ -1045,10 +1045,6 @@
   .section-6 .container .subscribe-info .subscribe-to-newsletter .input-part {
     margin-bottom: 80px;
   }
-  .section-6 .container .subscribe-info .input-part {
-    flex-direction: column;
-    justify-content: space-between;
-  }
   .section-6 .container .subscribe-info .couch-last-page {
     display: none;
   }
