@@ -414,7 +414,8 @@
             display: flex;
             position: relative;
             max-width: 614px;
-            width: 100%;
+            width: 200%;
+            margin-bottom: 40px;
 
             .dot-pattern-green {
                 position: absolute;
@@ -426,11 +427,11 @@
             }
 
             .img-1-page-3 {
-                position: absolute;
+                
                 z-index: 2;
                 border-radius: 20px;
                 // max-width: 614px;
-                width: calc(614px - 100px);
+                // width: calc(614px - 100px);
                 object-fit: contain;
                 // height: 514px;
 
@@ -440,11 +441,12 @@
             }
 
             .img-2-page-3 {
+                // display: none;
                 position: absolute;
                 width: 291px;
                 height: 349px;
                 top: 223px;
-                right: 0px;
+                right: -10px;
                 z-index: 3;
 
                 img {
@@ -453,11 +455,12 @@
             }
 
             .img-3-page-3 {
+                // display: none;
                 position: absolute;
                 width: 187px;
                 height: 187px;
                 top: 0px;
-                right: 0px;
+                right: -10px;
                 z-index: 3;
 
 
@@ -493,14 +496,15 @@
 
                 .set-1 {
                     display: flex;
-                    justify-content: space-between;
-                    width: 471px;
+                    width:100%;
+                    max-width: 471px;
                     margin-bottom: 24px;
                 }
 
                 .set-2 {
                     display: flex;
-                    justify-content: space-between;
+                    max-width: 471px;
+                    width:100%;
                 }
 
                 img {
@@ -1008,14 +1012,14 @@
             }
         }
 
-        .blog-1,
-        .blog-2,
-        .blog-3 {
-            img {
-                height: 200px;
-                width: 246px;
-            }
-        }
+        // .blog-1,
+        // .blog-2,
+        // .blog-3 {
+        //     img {
+        //         height: 340px;
+        //         width: 220px;
+        //     }
+        // }
     }
 }
 
@@ -1105,6 +1109,13 @@
                 }
             }
 
+        }
+    }
+
+    .section-3{
+        .container{
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 
