@@ -148,11 +148,12 @@
 
             .sofa-home-bg {
                 width: 63%;
-                position: relative;
+                position: absolute;
+                right: 40px;
 
                 img {
                     object-fit: contain;
-                    width: 100%;
+                    width: 90%;
                     top: -15px;
                     right: 0px;
                     position: absolute;
@@ -164,7 +165,7 @@
                     width: 262px;
                     height: 176px;
                     top: 70px;
-                    right: -26px;
+                    right: 0px;
                     position: absolute;
 
                     img {
@@ -784,6 +785,10 @@
                 justify-content: space-around;
                 cursor: pointer;
 
+                h4{
+                    margin-bottom: 5px;
+                }
+
 
                 img {
                     border-radius: 8px;
@@ -937,7 +942,7 @@
                 cursor: pointer;
 
                 &:hover {
-                    background-color: #beb9b9;
+                    background-color: #dad6d6;
                 }
 
                 img {
@@ -1011,13 +1016,17 @@
             }
 
             .intro-about-home {
-                .dot-pattern {
-                    width: 220px;
-                    height: 140px;
-                    // top: 69px;
-                    // right: 35px
-                }
+                .sofa-home-bg{
 
+                    right: 0px;
+                    .dot-pattern {
+                        width: 220px;
+                        height: 140px;
+                        // top: 69px;
+                        // right: 35px
+                    }
+    
+                }
             }
         }
     }
@@ -1601,6 +1610,9 @@
                 .item-nordic-chair,
                 .item-kruzo-chair,
                 .item-ergonomic-chair {
+                    .chair-img{
+                        width: 70%;
+                    }
                     &:hover {
                         width: 220px;
                     }

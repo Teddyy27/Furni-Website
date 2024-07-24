@@ -257,6 +257,18 @@
   line-height: 41px;
   cursor: pointer;
 }
+.section-5 h5 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 16.94px;
+}
+.section-5 h5 span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+  font-style: normal;
+}
 
 .section-6 {
   background-color: white;
@@ -394,12 +406,13 @@
 }
 .hero-section .container .intro-about-home .sofa-home-bg {
   width: 63%;
-  position: relative;
+  position: absolute;
+  right: 40px;
 }
 .hero-section .container .intro-about-home .sofa-home-bg img {
   -o-object-fit: contain;
      object-fit: contain;
-  width: 100%;
+  width: 90%;
   top: -15px;
   right: 0px;
   position: absolute;
@@ -409,7 +422,7 @@
   width: 262px;
   height: 176px;
   top: 70px;
-  right: -26px;
+  right: 0px;
   position: absolute;
 }
 .hero-section .container .intro-about-home .sofa-home-bg .dot-home img {
@@ -841,6 +854,11 @@
   justify-content: space-around;
   cursor: pointer;
 }
+.section-5 .container .blog-post .blog-1 h4,
+.section-5 .container .blog-post .blog-2 h4,
+.section-5 .container .blog-post .blog-3 h4 {
+  margin-bottom: 5px;
+}
 .section-5 .container .blog-post .blog-1 img,
 .section-5 .container .blog-post .blog-2 img,
 .section-5 .container .blog-post .blog-3 img {
@@ -957,7 +975,7 @@
   cursor: pointer;
 }
 .section-6 .container .icon-social .icon:hover {
-  background-color: #beb9b9;
+  background-color: #dad6d6;
 }
 .section-6 .container .icon-social .icon img {
   width: 100%;
@@ -1005,7 +1023,10 @@
   .hero-section .container .header .nav-bar .menu .cart-icon:hover {
     transform: scale(1.1);
   }
-  .hero-section .container .intro-about-home .dot-pattern {
+  .hero-section .container .intro-about-home .sofa-home-bg {
+    right: 0px;
+  }
+  .hero-section .container .intro-about-home .sofa-home-bg .dot-pattern {
     width: 220px;
     height: 140px;
   }
@@ -1343,6 +1364,11 @@
   }
   .hero-section .container .intro-about-home img {
     margin-top: 6%;
+  }
+  .section-1 .container .shop-items .item-nordic-chair .chair-img,
+  .section-1 .container .shop-items .item-kruzo-chair .chair-img,
+  .section-1 .container .shop-items .item-ergonomic-chair .chair-img {
+    width: 70%;
   }
   .section-1 .container .shop-items .item-nordic-chair:hover,
   .section-1 .container .shop-items .item-kruzo-chair:hover,

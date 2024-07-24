@@ -4,6 +4,7 @@
     .container {
         .header {
             background-color: $primary-color;
+
             a {
                 font-family: Inter;
                 font-size: 32px;
@@ -26,6 +27,7 @@
             }
 
         }
+
         p {
             color: $text-primary-color;
             font-family: Inter;
@@ -240,6 +242,22 @@
         line-height: 41px;
         cursor: pointer;
     }
+
+    h5 {
+
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 16.94px;
+
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16.94px;
+            font-style: normal;
+        }
+
+    }
 }
 
 
@@ -275,7 +293,7 @@
         line-height: 28px;
     }
 
-    .terms-condition{
+    .terms-condition {
         a {
             text-decoration: none;
             color: #6A6A6A;
@@ -284,5 +302,5 @@
             line-height: 24px;
         }
     }
-    
+
 }
