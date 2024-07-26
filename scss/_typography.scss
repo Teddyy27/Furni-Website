@@ -55,6 +55,7 @@
         }
 
         p {
+            color:$text-para-main-color;
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;
@@ -66,6 +67,7 @@
 
     .shop-items {
         font-family: Inter;
+        color:$text-seconadary-color;
 
         h4 {
             font-size: 16px;
@@ -102,6 +104,7 @@
         }
 
         p {
+            color: $text-para-main-color;
             font-size: 14px;
             font-weight: 400;
             line-height: 21px;
@@ -119,6 +122,7 @@
         }
 
         p {
+            color:$text-para-main-color;
             font-size: 14px;
             font-weight: 400;
             line-height: 22px;
@@ -135,18 +139,21 @@
     font-family: Inter;
 
     h3 {
+        color: $text-seconadary-color;
         font-size: 34px;
         font-weight: 600;
         line-height: 41px;
     }
 
     p {
+        color: $text-para-main-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
     }
 
     h5 {
+        color: $text-para-main-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 19px;
@@ -170,12 +177,14 @@
         }
 
         p {
+            color: $text-para-main-color;
             font-size: 14px;
             font-weight: 400;
             line-height: 22px;
         }
 
         a {
+            text-decoration: none;
             font-size: 12px;
             font-weight: 700;
             line-height: 22px;

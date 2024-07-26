@@ -64,10 +64,11 @@
                         cursor: pointer;
 
 
-                        &:active {
-                            color: $text-seconadary-color;
+                        &.active {
+                            color: $text-primary-color;
                             text-decoration: 5px solid $button-primary-color underline;
                             text-underline-offset: 7px;
+                            opacity: 1;
 
                         }
 
@@ -367,7 +368,7 @@
                     flex-wrap: wrap;
 
                     h4 {
-                        padding-bottom: 1.2%;
+                        padding: 12px 0 9px 0;
                     }
 
                     p {
@@ -461,6 +462,7 @@
                 // height: 514px;
 
                 img {
+                    width: 100%;
                     border-radius: 10px 0 0 10px;
                 }
             }
@@ -475,6 +477,7 @@
                 z-index: 3;
 
                 img {
+                    width: 100%;
                     border-radius: 10px;
                 }
             }
@@ -490,6 +493,7 @@
 
 
                 img {
+                    width: 100%;
                     border-radius: 10px;
                 }
             }
@@ -521,15 +525,19 @@
 
                 .set-1 {
                     display: flex;
-                    width: 100%;
-                    max-width: 471px;
+                    // width: 100%;
+                    // max-width: 471px;
                     margin-bottom: 24px;
                 }
 
                 .set-2 {
                     display: flex;
-                    max-width: 471px;
-                    width: 100%;
+                    // max-width: 471px;
+                    // width: 100%;
+                }
+
+                .bullet-2 {
+                    padding-left: 40px;
                 }
 
                 img {
@@ -539,7 +547,7 @@
 
                 h5 {
                     display: flex;
-                    width: 215px;
+                    // max-width: 215px;
                     height: 36px;
                     align-items: self-start;
                 }
@@ -580,7 +588,7 @@
             .item-2-kruzi,
             .item-3-erogonomic {
                 display: flex;
-                width: 33%;
+                // width: 34%;
 
                 .img-menu {
                     position: relative;
@@ -734,7 +742,7 @@
                         transition: all ease-in;
                         cursor: pointer;
 
-                        .active {
+                        &.active {
                             color: $primary-color;
                         }
 
@@ -757,6 +765,7 @@
     .container {
         .blog-headline {
             display: flex;
+            margin-bottom: 20px;
 
             h3 {
                 padding-right: 73%;
@@ -765,7 +774,7 @@
 
         .blog-post {
             display: flex;
-            flex-wrap: wrap;
+
 
             .circular-btn {
 
@@ -785,7 +794,7 @@
                 justify-content: space-around;
                 cursor: pointer;
 
-                h4{
+                h4 {
                     margin-bottom: 5px;
                 }
 
@@ -1016,16 +1025,17 @@
             }
 
             .intro-about-home {
-                .sofa-home-bg{
+                .sofa-home-bg {
 
                     right: 0px;
+
                     .dot-pattern {
                         width: 220px;
                         height: 140px;
                         // top: 69px;
                         // right: 35px
                     }
-    
+
                 }
             }
         }
@@ -1069,14 +1079,18 @@
     .section-5 {
         .blog-headline {
             h3 {
-                font-size: 24px;
-                line-height: 34px;
+                padding-right: unset;
             }
 
             a {
-                font-size: 10px;
-                line-height: 34px;
+                position: absolute;
+                right: 12px;
             }
+        }
+
+        .blog-post {
+            overflow: auto;
+            white-space: nowrap;
         }
 
         // .blog-1,
@@ -1180,9 +1194,22 @@
     }
 
     .section-3 {
+        padding: 80px 0 120px 0;
+
         .container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+
+            .second-half-page-3 {
+                padding-bottom: 100px;
+                padding-left: unset;
+
+                .bullet-point {
+                    .bullet-2 {
+                        padding-left: 20px;
+                    }
+                }
+            }
         }
     }
 
@@ -1366,58 +1393,53 @@
             .blog-headline {
                 display: flex;
                 margin-bottom: 15px;
-
-                h3 {
-                    padding-right: 63%;
-                }
             }
 
-            .blog-post {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-items: center;
+            // .blog-post {
+            //     display: flex;
+            //     flex-direction: row;
+            //     justify-content: space-evenly;
+            //     align-items: center;
 
-                .circular-btn {
-                    &.left {
-                        display: flex;
-                    }
+            //     .circular-btn {
+            //         &.left {
+            //             display: flex;
+            //         }
 
-                    &.right {
-                        display: flex;
+            //         &.right {
+            //             display: flex;
 
-                        .right-arrow {
-                            transform: rotate(180deg);
-                        }
-                    }
-                }
+            //             .right-arrow {
+            //                 transform: rotate(180deg);
+            //             }
+            //         }
+            //     }
 
-                .blog-1,
-                .blog-3 {
-                    display: none;
+            //     .blog-1,
+            //     .blog-3 {
+            //         display: none;
 
-                    img {
-                        border-radius: 8px;
-                    }
-                }
+            //         img {
+            //             border-radius: 8px;
+            //         }
+            //     }
 
-                .blog-2 {
-                    max-width: 700px;
-                    width: 72%;
-                    padding: unset;
+            //     .blog-2 {
+            //         max-width: 700px;
+            //         width: 72%;
+            //         padding: unset;
 
-                    .text-blog {
-                        padding: 0 34px;
-                    }
+            //         .text-blog {
+            //             padding: 0 34px;
+            //         }
 
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        object-fit: contain;
-                        border-radius: 10px;
-                    }
-                }
-            }
+            //         img {
+            //             height: 100%;
+            //             width: 100%;
+            //             object-fit: contain;
+            //             border-radius: 10px;
+            //         }
+            //     }
         }
     }
 
@@ -1490,6 +1512,19 @@
         }
     }
 
+    .section-1 {
+        .container {
+            .shop-items {
+
+                .item-nordic-chair,
+                .item-kruzo-chair,
+                .item-ergonomic-chair {
+                    width: 0%;
+                }
+            }
+        }
+    }
+
     .section-2 {
         .container {
 
@@ -1519,6 +1554,16 @@
             }
         }
     }
+
+    .section-5 {
+        .container {
+            .blog-headline {
+                h3 {
+                    padding-right: unset;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 656px) {
@@ -1529,7 +1574,11 @@
     .hero-section {
         .container {
             .header {
+                height: 90px;
+
                 .nav-bar {
+                    padding: 30px 0 0 0;
+
                     a {
                         font-size: 28px;
                     }
@@ -1569,7 +1618,7 @@
                     padding: 80px 0;
 
                     p {
-                        font-size: 28px;
+                        font-size: 30px;
                         line-height: 42px;
                         margin-bottom: 84px;
                     }
@@ -1594,10 +1643,14 @@
                 }
 
 
-
-                img {
-                    margin-top: 6%;
+                .sofa-home-bg {
+                    img {
+                        margin-top: 6%;
+                        width: 100%;
+                    }
                 }
+
+
 
             }
         }
@@ -1605,18 +1658,33 @@
 
     .section-1 {
         .container {
+            padding: 60px 0 80px 0;
+
+            .about-items {
+                p {
+                    margin: 10px 0;
+                }
+            }
+
             .shop-items {
+                overflow: auto;
+                white-space: nowrap;
 
                 .item-nordic-chair,
                 .item-kruzo-chair,
                 .item-ergonomic-chair {
-                    .chair-img{
-                        width: 70%;
-                    }
-                    &:hover {
-                        width: 220px;
-                    }
+                    width: 100%;
+                    position: relative;
+                    z-index: 4;
                 }
+            }
+        }
+    }
+
+    .section-2 {
+        .container {
+            .first-half-page-2 {
+                padding-bottom: 40px;
             }
         }
     }
@@ -1686,7 +1754,7 @@
                     z-index: 4;
 
                     p {
-                        font-size: 24px;
+                        font-size: 30px;
                         line-height: 42px;
                         margin-bottom: 54px;
                     }
@@ -1711,10 +1779,13 @@
                 }
 
 
-
-                img {
-                    margin-top: 16px;
+                .sofa-home-bg {
+                    img {
+                        width: 103%;
+                        margin-top: 16px;
+                    }
                 }
+
 
 
             }
@@ -1738,13 +1809,30 @@
         }
     }
 
+    .section-5 {
+        .container {
+            .blog-headline {
+                h3 {
+                    font-size: 30px;
+                    padding-right: unset;
+                }
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
 
     .section-6 {
         .container {
             .input-part {
                 flex-direction: column;
-                margin: unset;
-                margin-bottom: 50px;
+                margin: 0 0 50px 0;
+
+                .input-field {
+                    margin-bottom: 10px;
+                }
             }
 
             .furni-about {
@@ -1791,6 +1879,8 @@
         .container {
             .header {
                 .nav-bar {
+                    padding: 20px 0 0 0;
+
                     a {
                         font-size: 28px;
                     }
@@ -1818,38 +1908,42 @@
                     }
                 }
             }
-        }
 
-        .intro-about-home {
-            .intro-about-home-text {
-                z-index: 4;
-                padding: 80px 0;
 
-                p {
-                    font-size: 20px;
-                    line-height: 38px;
-                    margin-bottom: 84px;
-                }
+            .intro-about-home {
+                .intro-about-home-text {
+                    z-index: 4;
+                    padding: 60px 0;
 
-                .btn-option {
-                    .primary-btn {
-                        padding: 0 27px;
-                        margin-right: 11px;
+                    p {
+                        font-size: 26px;
+                        line-height: 38px;
+                        margin-bottom: 84px;
                     }
 
-                    .secondary-btn {
-                        padding: 0 24px;
+                    .btn-option {
+                        .primary-btn {
+                            padding: 0 27px;
+                            margin-right: 11px;
+                        }
+
+                        .secondary-btn {
+                            padding: 0 24px;
+                        }
                     }
                 }
+
+
+                .sofa-home-bg {
+                    img {
+                        width: 110%;
+                        margin-top: 30px;
+                    }
+                }
+
+
+
             }
-
-
-            img {
-                width: 75%;
-                margin-top: 30px;
-            }
-
-
         }
     }
 }

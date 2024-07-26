@@ -112,6 +112,7 @@
   text-align: left;
 }
 .section-1 .about-items p {
+  color: #6A6A6A;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -119,6 +120,7 @@
 }
 .section-1 .shop-items {
   font-family: Inter;
+  color: #2F2F2F;
 }
 .section-1 .shop-items h4 {
   font-size: 16px;
@@ -144,6 +146,7 @@
   line-height: 41px;
 }
 .section-2 .why-choose-us p {
+  color: #6A6A6A;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -160,6 +163,7 @@
 .section-2 .easy-to-shop p,
 .section-2 .support p,
 .section-2 .hassle-free-returns p {
+  color: #6A6A6A;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -171,16 +175,19 @@
   font-family: Inter;
 }
 .section-3 h3 {
+  color: #2F2F2F;
   font-size: 34px;
   font-weight: 600;
   line-height: 41px;
 }
 .section-3 p {
+  color: #6A6A6A;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 .section-3 h5 {
+  color: #6A6A6A;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
@@ -198,11 +205,13 @@
   line-height: 22px;
 }
 .section-4 .item-menu p {
+  color: #6A6A6A;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
 }
 .section-4 .item-menu a {
+  text-decoration: none;
   font-size: 12px;
   font-weight: 700;
   line-height: 22px;
@@ -353,11 +362,12 @@
 .hero-section .container .header .nav-bar .menu .menu-item {
   cursor: pointer;
 }
-.hero-section .container .header .nav-bar .menu .menu-item:active {
-  color: #2F2F2F;
+.hero-section .container .header .nav-bar .menu .menu-item.active {
+  color: #ffffff;
   -webkit-text-decoration: 5px solid #F9BF29 underline;
           text-decoration: 5px solid #F9BF29 underline;
   text-underline-offset: 7px;
+  opacity: 1;
 }
 .hero-section .container .header .nav-bar .menu .menu-item:hover {
   opacity: 100%;
@@ -546,7 +556,7 @@
 }
 .section-2 .container .first-half-page-2 .sub-details .feature-line-1 h4,
 .section-2 .container .first-half-page-2 .sub-details .feature-line-2 h4 {
-  padding-bottom: 1.2%;
+  padding: 12px 0 9px 0;
 }
 .section-2 .container .first-half-page-2 .sub-details .feature-line-1 p,
 .section-2 .container .first-half-page-2 .sub-details .feature-line-2 p {
@@ -628,6 +638,7 @@
      object-fit: contain;
 }
 .section-3 .container .first-half-page-3 .img-1-page-3 img {
+  width: 100%;
   border-radius: 10px 0 0 10px;
 }
 .section-3 .container .first-half-page-3 .img-2-page-3 {
@@ -639,6 +650,7 @@
   z-index: 3;
 }
 .section-3 .container .first-half-page-3 .img-2-page-3 img {
+  width: 100%;
   border-radius: 10px;
 }
 .section-3 .container .first-half-page-3 .img-3-page-3 {
@@ -650,6 +662,7 @@
   z-index: 3;
 }
 .section-3 .container .first-half-page-3 .img-3-page-3 img {
+  width: 100%;
   border-radius: 10px;
 }
 .section-3 .container .second-half-page-3 {
@@ -672,14 +685,13 @@
 }
 .section-3 .container .second-half-page-3 .bullet-point .set-1 {
   display: flex;
-  width: 100%;
-  max-width: 471px;
   margin-bottom: 24px;
 }
 .section-3 .container .second-half-page-3 .bullet-point .set-2 {
   display: flex;
-  max-width: 471px;
-  width: 100%;
+}
+.section-3 .container .second-half-page-3 .bullet-point .bullet-2 {
+  padding-left: 40px;
 }
 .section-3 .container .second-half-page-3 .bullet-point img {
   padding: 5.5px;
@@ -687,7 +699,6 @@
 }
 .section-3 .container .second-half-page-3 .bullet-point h5 {
   display: flex;
-  width: 215px;
   height: 36px;
   align-items: self-start;
 }
@@ -715,7 +726,6 @@
 .section-4 .container .item-menu .item-2-kruzi,
 .section-4 .container .item-menu .item-3-erogonomic {
   display: flex;
-  width: 33%;
 }
 .section-4 .container .item-menu .item-1-nordic .img-menu,
 .section-4 .container .item-menu .item-2-kruzi .img-menu,
@@ -821,7 +831,7 @@
   transition: all ease-in;
   cursor: pointer;
 }
-.section-4 .container .profile .slider ul .pos .active {
+.section-4 .container .profile .slider ul .pos.active {
   color: #385D50;
 }
 .section-4 .container .profile .slider ul .pos:hover {
@@ -834,13 +844,13 @@
 }
 .section-5 .container .blog-headline {
   display: flex;
+  margin-bottom: 20px;
 }
 .section-5 .container .blog-headline h3 {
   padding-right: 73%;
 }
 .section-5 .container .blog-post {
   display: flex;
-  flex-wrap: wrap;
 }
 .section-5 .container .blog-post .circular-btn.left, .section-5 .container .blog-post .circular-btn.right {
   display: none;
@@ -1058,12 +1068,15 @@
     line-height: 18px;
   }
   .section-5 .blog-headline h3 {
-    font-size: 24px;
-    line-height: 34px;
+    padding-right: unset;
   }
   .section-5 .blog-headline a {
-    font-size: 10px;
-    line-height: 34px;
+    position: absolute;
+    right: 12px;
+  }
+  .section-5 .blog-post {
+    overflow: auto;
+    white-space: nowrap;
   }
 }
 @media (max-width: 1024px) {
@@ -1114,9 +1127,19 @@
   .section-2 .container .first-half-page-2 .why-choose-us {
     padding: 40px 0 30px 0;
   }
+  .section-3 {
+    padding: 80px 0 120px 0;
+  }
   .section-3 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+  }
+  .section-3 .container .second-half-page-3 {
+    padding-bottom: 100px;
+    padding-left: unset;
+  }
+  .section-3 .container .second-half-page-3 .bullet-point .bullet-2 {
+    padding-left: 20px;
   }
   .section-6 .container .subscribe-info .subscribe-to-newsletter .input-part {
     margin-bottom: 80px;
@@ -1219,47 +1242,6 @@
     display: flex;
     margin-bottom: 15px;
   }
-  .section-5 .container .blog-headline h3 {
-    padding-right: 63%;
-  }
-  .section-5 .container .blog-post {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .section-5 .container .blog-post .circular-btn.left {
-    display: flex;
-  }
-  .section-5 .container .blog-post .circular-btn.right {
-    display: flex;
-  }
-  .section-5 .container .blog-post .circular-btn.right .right-arrow {
-    transform: rotate(180deg);
-  }
-  .section-5 .container .blog-post .blog-1,
-  .section-5 .container .blog-post .blog-3 {
-    display: none;
-  }
-  .section-5 .container .blog-post .blog-1 img,
-  .section-5 .container .blog-post .blog-3 img {
-    border-radius: 8px;
-  }
-  .section-5 .container .blog-post .blog-2 {
-    max-width: 700px;
-    width: 72%;
-    padding: unset;
-  }
-  .section-5 .container .blog-post .blog-2 .text-blog {
-    padding: 0 34px;
-  }
-  .section-5 .container .blog-post .blog-2 img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 10px;
-  }
 }
 @media (max-width: 767px) {
   .container {
@@ -1298,6 +1280,11 @@
   .hero-section .container .intro-about-home .intro-about-home-text .btn-option .btn.secondary-btn {
     padding: 0 24px;
   }
+  .section-1 .container .shop-items .item-nordic-chair,
+  .section-1 .container .shop-items .item-kruzo-chair,
+  .section-1 .container .shop-items .item-ergonomic-chair {
+    width: 0%;
+  }
   .section-2 .container {
     display: flex;
     flex-direction: column;
@@ -1311,10 +1298,19 @@
   .section-4 .container .testimonial .slider-testimonial p {
     padding: 2px 60px;
   }
+  .section-5 .container .blog-headline h3 {
+    padding-right: unset;
+  }
 }
 @media (max-width: 656px) {
   .container {
     width: calc(100% - 32px);
+  }
+  .hero-section .container .header {
+    height: 90px;
+  }
+  .hero-section .container .header .nav-bar {
+    padding: 30px 0 0 0;
   }
   .hero-section .container .header .nav-bar a {
     font-size: 28px;
@@ -1345,7 +1341,7 @@
     padding: 80px 0;
   }
   .hero-section .container .intro-about-home .intro-about-home-text p {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 84px;
   }
@@ -1362,18 +1358,29 @@
   .hero-section .container .intro-about-home .intro-about-home-text .btn-option .btn.secondary-btn {
     padding: 0 24px;
   }
-  .hero-section .container .intro-about-home img {
+  .hero-section .container .intro-about-home .sofa-home-bg img {
     margin-top: 6%;
+    width: 100%;
   }
-  .section-1 .container .shop-items .item-nordic-chair .chair-img,
-  .section-1 .container .shop-items .item-kruzo-chair .chair-img,
-  .section-1 .container .shop-items .item-ergonomic-chair .chair-img {
-    width: 70%;
+  .section-1 .container {
+    padding: 60px 0 80px 0;
   }
-  .section-1 .container .shop-items .item-nordic-chair:hover,
-  .section-1 .container .shop-items .item-kruzo-chair:hover,
-  .section-1 .container .shop-items .item-ergonomic-chair:hover {
-    width: 220px;
+  .section-1 .container .about-items p {
+    margin: 10px 0;
+  }
+  .section-1 .container .shop-items {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .section-1 .container .shop-items .item-nordic-chair,
+  .section-1 .container .shop-items .item-kruzo-chair,
+  .section-1 .container .shop-items .item-ergonomic-chair {
+    width: 100%;
+    position: relative;
+    z-index: 4;
+  }
+  .section-2 .container .first-half-page-2 {
+    padding-bottom: 40px;
   }
   .section-4 .container .item-menu .item-1-nordic,
   .section-4 .container .item-menu .item-2-kruzi,
@@ -1409,7 +1416,7 @@
     z-index: 4;
   }
   .hero-section .container .intro-about-home .intro-about-home-text p {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 54px;
   }
@@ -1426,7 +1433,8 @@
   .hero-section .container .intro-about-home .intro-about-home-text .btn-option .btn.secondary-btn {
     padding: 0 20px;
   }
-  .hero-section .container .intro-about-home img {
+  .hero-section .container .intro-about-home .sofa-home-bg img {
+    width: 103%;
     margin-top: 16px;
   }
   .section-2 .container .first-half-page-2 .sub-details {
@@ -1435,10 +1443,19 @@
   .section-2 .container .second-half-page-2 img {
     height: 0%;
   }
+  .section-5 .container .blog-headline h3 {
+    font-size: 30px;
+    padding-right: unset;
+  }
+  .section-5 .container .blog-headline a {
+    font-size: 12px;
+  }
   .section-6 .container .input-part {
     flex-direction: column;
-    margin: unset;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
+  }
+  .section-6 .container .input-part .input-field {
+    margin-bottom: 10px;
   }
   .section-6 .container .furni-about .support-links {
     flex-wrap: wrap;
@@ -1463,6 +1480,9 @@
   .container {
     width: calc(100% - 40px);
   }
+  .hero-section .container .header .nav-bar {
+    padding: 20px 0 0 0;
+  }
   .hero-section .container .header .nav-bar a {
     font-size: 28px;
   }
@@ -1483,24 +1503,24 @@
     display: block;
     size: 16px;
   }
-  .hero-section .intro-about-home .intro-about-home-text {
+  .hero-section .container .intro-about-home .intro-about-home-text {
     z-index: 4;
-    padding: 80px 0;
+    padding: 60px 0;
   }
-  .hero-section .intro-about-home .intro-about-home-text p {
-    font-size: 20px;
+  .hero-section .container .intro-about-home .intro-about-home-text p {
+    font-size: 26px;
     line-height: 38px;
     margin-bottom: 84px;
   }
-  .hero-section .intro-about-home .intro-about-home-text .btn-option .primary-btn {
+  .hero-section .container .intro-about-home .intro-about-home-text .btn-option .primary-btn {
     padding: 0 27px;
     margin-right: 11px;
   }
-  .hero-section .intro-about-home .intro-about-home-text .btn-option .secondary-btn {
+  .hero-section .container .intro-about-home .intro-about-home-text .btn-option .secondary-btn {
     padding: 0 24px;
   }
-  .hero-section .intro-about-home img {
-    width: 75%;
+  .hero-section .container .intro-about-home .sofa-home-bg img {
+    width: 110%;
     margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
