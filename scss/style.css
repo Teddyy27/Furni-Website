@@ -632,6 +632,7 @@
   left: -80px;
 }
 .section-3 .container .first-half-page-3 .img-1-page-3 {
+  position: relative;
   z-index: 2;
   border-radius: 20px;
   -o-object-fit: contain;
@@ -643,9 +644,7 @@
 }
 .section-3 .container .first-half-page-3 .img-2-page-3 {
   position: absolute;
-  width: 291px;
-  height: 349px;
-  top: 223px;
+  bottom: -50px;
   right: -10px;
   z-index: 3;
 }
@@ -655,8 +654,6 @@
 }
 .section-3 .container .first-half-page-3 .img-3-page-3 {
   position: absolute;
-  width: 187px;
-  height: 187px;
   top: 0px;
   right: -10px;
   z-index: 3;
@@ -726,11 +723,14 @@
 .section-4 .container .item-menu .item-2-kruzi,
 .section-4 .container .item-menu .item-3-erogonomic {
   display: flex;
+  width: 34%;
 }
 .section-4 .container .item-menu .item-1-nordic .img-menu,
 .section-4 .container .item-menu .item-2-kruzi .img-menu,
 .section-4 .container .item-menu .item-3-erogonomic .img-menu {
   position: relative;
+  max-width: 110px;
+  width: 100%;
 }
 .section-4 .container .item-menu .item-1-nordic .img-menu img,
 .section-4 .container .item-menu .item-2-kruzi .img-menu img,
@@ -743,6 +743,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  max-width: 211px;
+  width: 100%;
 }
 .section-4 .container .item-menu .item-1-nordic .img-menu,
 .section-4 .container .item-menu .item-2-kruzi .img-menu,
@@ -810,14 +812,19 @@
 .section-4 .container .profile .pic-person {
   position: relative;
   z-index: 3;
-  width: 77px;
-  height: 77px;
+  max-width: 77px;
+  max-height: 77px;
+  width: 100%;
   opacity: 100%;
   margin-bottom: 13px;
 }
 .section-4 .container .profile .pic-person img {
   z-index: 1;
   border-radius: 38.5px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .section-4 .container .profile .slider {
   margin: 40px 0;
@@ -839,7 +846,7 @@
   transition-duration: 400ms;
 }
 
-.section-5 {
+.section-5 .container {
   padding: 0 0 159px 0;
 }
 .section-5 .container .blog-headline {
@@ -858,6 +865,7 @@
 .section-5 .container .blog-post .blog-1,
 .section-5 .container .blog-post .blog-2,
 .section-5 .container .blog-post .blog-3 {
+  width: 100%;
   height: 344px;
   display: flex;
   flex-direction: column;
@@ -875,7 +883,7 @@
   border-radius: 8px;
 }
 .section-5 .container .blog-post .blog-2 {
-  padding: 0 30px;
+  margin: 0 30px;
 }
 
 .section-6 {
@@ -934,10 +942,14 @@
 }
 .section-6 .container .subscribe-info .couch-last-page {
   position: absolute;
-  width: 458px;
+  max-width: 458px;
+  width: 80%;
   height: 396.24px;
   top: -190px;
   right: -56px;
+}
+.section-6 .container .subscribe-info .couch-last-page img {
+  width: 100%;
 }
 .section-6 .container .furni-about {
   display: flex;
@@ -1078,6 +1090,9 @@
     overflow: auto;
     white-space: nowrap;
   }
+  .section-6 .container .subscribe-info .couch-last-page {
+    right: -20px;
+  }
 }
 @media (max-width: 1024px) {
   .container {
@@ -1132,11 +1147,26 @@
   }
   .section-3 .container {
     display: flex;
-    flex-wrap: wrap-reverse;
+  }
+  .section-3 .container .first-half-page-3 {
+    margin-top: 32px;
+  }
+  .section-3 .container .first-half-page-3 .dot-pattern-green {
+    width: 60%;
+  }
+  .section-3 .container .first-half-page-3 .img-1-page-3 {
+    width: 65%;
+  }
+  .section-3 .container .first-half-page-3 .img-2-page-3 {
+    width: 45%;
+    right: 8px;
+  }
+  .section-3 .container .first-half-page-3 .img-3-page-3 {
+    width: 30%;
+    right: 8px;
   }
   .section-3 .container .second-half-page-3 {
-    padding-bottom: 100px;
-    padding-left: unset;
+    padding-left: 10px;
   }
   .section-3 .container .second-half-page-3 .bullet-point .bullet-2 {
     padding-left: 20px;
@@ -1235,6 +1265,39 @@
   .section-2 .container .second-half-page-2 img {
     height: 550px;
   }
+  .section-3 {
+    padding: 80px 0 120px 0;
+  }
+  .section-3 .container {
+    display: flex;
+  }
+  .section-3 .container .first-half-page-3 .img-1-page-3 {
+    width: 65%;
+  }
+  .section-3 .container .first-half-page-3 .img-2-page-3 {
+    width: 45%;
+    right: 8px;
+  }
+  .section-3 .container .first-half-page-3 .img-3-page-3 {
+    width: 30%;
+    right: 8px;
+  }
+  .section-3 .container .second-half-page-3 {
+    padding-left: 10px;
+  }
+  .section-3 .container .second-half-page-3 .We-help-you-make-Modern-Interior-Design h3 {
+    font-size: 28px;
+  }
+  .section-3 .container .second-half-page-3 .We-help-you-make-Modern-Interior-Design p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .section-3 .container .second-half-page-3 .bullet-point .bullet-2 {
+    padding-left: 20px;
+  }
+  .section-3 .container .second-half-page-3 .bullet-point h5 {
+    font-size: 12px;
+  }
   .section-4 .container .testimonial .slider-testimonial p {
     padding: 2px 75px;
   }
@@ -1280,10 +1343,17 @@
   .hero-section .container .intro-about-home .intro-about-home-text .btn-option .btn.secondary-btn {
     padding: 0 24px;
   }
+  .section-1 .container {
+    padding: 50px 0;
+  }
+  .section-1 .container .about-items p {
+    max-width: 500px;
+    width: 100%;
+  }
   .section-1 .container .shop-items .item-nordic-chair,
   .section-1 .container .shop-items .item-kruzo-chair,
   .section-1 .container .shop-items .item-ergonomic-chair {
-    width: 0%;
+    width: 100%;
   }
   .section-2 .container {
     display: flex;
@@ -1295,11 +1365,49 @@
   .section-2 .container .first-half-page-2 .why-choose-us p {
     max-width: 500px;
   }
+  .section-3 .container {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .section-3 .container .first-half-page-3 {
+    width: 100%;
+  }
+  .section-3 .container .first-half-page-3 .dot-pattern-green {
+    display: none;
+  }
+  .section-3 .container .second-half-page-3 {
+    padding-left: unset;
+    padding-bottom: 20px;
+  }
+  .section-3 .container .second-half-page-3 .bullet-point .set-1 h5,
+  .section-3 .container .second-half-page-3 .bullet-point .set-2 h5 {
+    max-width: 215px;
+  }
+  .section-4 .container .item-menu .item-1-nordic,
+  .section-4 .container .item-menu .item-2-kruzi,
+  .section-4 .container .item-menu .item-3-erogonomic {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-4 .container .item-menu .item-1-nordic p,
+  .section-4 .container .item-menu .item-2-kruzi p,
+  .section-4 .container .item-menu .item-3-erogonomic p {
+    margin: 4px 0;
+  }
   .section-4 .container .testimonial .slider-testimonial p {
     padding: 2px 60px;
   }
+  .section-4 .container .profile .slider {
+    margin: 20px 0 30px 0;
+  }
+  .section-5 .container {
+    padding: 0 0 120px 0;
+  }
   .section-5 .container .blog-headline h3 {
     padding-right: unset;
+  }
+  .section-6 .container .subscribe-info .input-part {
+    margin: 0 0 56px 0;
   }
 }
 @media (max-width: 656px) {
@@ -1363,34 +1471,50 @@
     width: 100%;
   }
   .section-1 .container {
-    padding: 60px 0 80px 0;
+    padding: 45px 0;
   }
   .section-1 .container .about-items p {
     margin: 10px 0;
   }
   .section-1 .container .shop-items {
-    overflow: auto;
+    overflow-x: auto;
     white-space: nowrap;
+    scroll-behavior: smooth;
+    z-index: 3;
   }
-  .section-1 .container .shop-items .item-nordic-chair,
-  .section-1 .container .shop-items .item-kruzo-chair,
-  .section-1 .container .shop-items .item-ergonomic-chair {
+  .section-1 .container .shop-items .item-nordic-chair img {
+    width: 80%;
+  }
+  .section-1 .container .shop-items .item-kruzo-chair img {
     width: 100%;
-    position: relative;
+  }
+  .section-1 .container .shop-items .item-ergonomic-chair {
     z-index: 4;
+  }
+  .section-1 .container .shop-items .item-ergonomic-chair img {
+    width: 60%;
   }
   .section-2 .container .first-half-page-2 {
     padding-bottom: 40px;
   }
-  .section-4 .container .item-menu .item-1-nordic,
-  .section-4 .container .item-menu .item-2-kruzi,
-  .section-4 .container .item-menu .item-3-erogonomic {
-    display: flex;
-    flex-direction: column;
-  }
   .section-4 .container .testimonial .slider-testimonial p {
     padding: 2px 20px;
     font-size: 14px;
+  }
+  .section-4 .container .profile .pic-person {
+    width: 12%;
+  }
+  .section-4 .container .profile h4 {
+    font-size: 14px;
+  }
+  .section-4 .container .profile h5 {
+    font-size: 10px;
+  }
+  .section-5 .container {
+    padding: 0 0 100px 0;
+  }
+  .section-6 {
+    padding: 76px 0 0 0;
   }
 }
 @media (max-width: 543px) {
@@ -1443,18 +1567,34 @@
   .section-2 .container .second-half-page-2 img {
     height: 0%;
   }
+  .section-2 .container .second-half-page-2 .dot-pattern-yellow {
+    display: none;
+  }
+  .section-4 .container .testimonial .slider-testimonial .circular-btn.left, .section-4 .container .testimonial .slider-testimonial .circular-btn.right {
+    display: none;
+  }
+  .section-4 .container .testimonial .slider-testimonial p {
+    line-height: 24px;
+  }
   .section-5 .container .blog-headline h3 {
-    font-size: 30px;
+    font-size: 26px;
     padding-right: unset;
   }
   .section-5 .container .blog-headline a {
     font-size: 12px;
   }
-  .section-6 .container .input-part {
+  .section-5 .container .blog-post .blog-1,
+  .section-5 .container .blog-post .blog-2,
+  .section-5 .container .blog-post .blog-3 {
+    width: 80%;
+    height: 80%;
+  }
+  .section-6 .container .subscribe-info .input-part {
     flex-direction: column;
     margin: 0 0 50px 0;
   }
-  .section-6 .container .input-part .input-field {
+  .section-6 .container .subscribe-info .input-part .input-field {
+    max-width: none;
     margin-bottom: 10px;
   }
   .section-6 .container .furni-about .support-links {
@@ -1522,5 +1662,35 @@
   .hero-section .container .intro-about-home .sofa-home-bg img {
     width: 110%;
     margin-top: 30px;
+  }
+  .section-3 {
+    padding: 20px 0 110px 0;
+  }
+  .section-4 .container .item-menu {
+    flex-direction: column;
+  }
+  .section-4 .container .item-menu .item-1-nordic,
+  .section-4 .container .item-menu .item-2-kruzi,
+  .section-4 .container .item-menu .item-3-erogonomic {
+    flex-direction: row;
+    width: 100%;
+  }
+  .section-4 .container .item-menu .item-1-nordic .img-menu,
+  .section-4 .container .item-menu .item-2-kruzi .img-menu,
+  .section-4 .container .item-menu .item-3-erogonomic .img-menu {
+    margin-right: 5%;
+  }
+  .section-5 .container .blog-headline h3 {
+    font-size: 24px;
+    padding-right: unset;
+  }
+  .section-5 .container .blog-headline a {
+    font-size: 9px;
+  }
+  .section-5 .container .blog-post .blog-1,
+  .section-5 .container .blog-post .blog-2,
+  .section-5 .container .blog-post .blog-3 {
+    width: 80%;
+    height: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
