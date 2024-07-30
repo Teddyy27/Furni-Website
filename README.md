@@ -26,14 +26,14 @@ To get a local copy up and running, follow these simple steps:
 
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/furni.git
+	bash
+	Copy code
+	git clone https://github.com/Teddyy27/furni.git
 Navigate to the project directory:
 
-bash
-Copy code
-cd furni
+	bash
+	Copy code
+	cd furni
 Open index.html in your preferred browser:
 
 You can simply open the index.html file in your browser to view the website.
@@ -51,24 +51,24 @@ Select items and add them to your shopping cart for purchase.
 Responsive Design:
 Experience a responsive design that adapts to different screen sizes.
 
-Folder Structure
-css
-Copy code
-furni/
-│
-├── css/
-│   ├── main.css
-│   └── main.scss
-│
-├── js/
-│   └── main.js
-│
-├── images/
-│   └── (images of furniture items)
-│
-├── index.html
-│
-└── README.md
+	Folder Structure
+	css
+	Copy code
+	furni/
+	│
+	├── css/
+	│   ├── main.css
+	│   └── main.scss
+	│
+	├── js/
+	│   └── main.js
+	│
+	├── images/
+	│   └── (images of furniture items)
+	│
+	├── index.html
+	│
+	└── README.md
 
 Contributing
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
