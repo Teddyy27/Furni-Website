@@ -2,6 +2,7 @@
 @import "./button";
 @import "./typography";
 @import "./container";
+@import "./hamburger";
 
 * {
     margin: 0;
@@ -81,21 +82,10 @@
                         }
                     }
 
-
-                    .material-symbols-outlined {
-                        color: white;
-                        opacity: 50%;
-                        display: none;
-
-                        &:hover {
-                            opacity: 100%;
-                            transition-duration: 300ms;
-                        }
-                    }
-
-
                     .user-icon,
                     .cart-icon {
+                        position: relative;
+                        z-index: 7;
 
                         img {
                             height: 20px;
@@ -111,6 +101,16 @@
                     .user-icon {
                         padding: 0 0 0 6%;
                     }
+
+                
+                }
+                .hamburger-icon{
+                    margin: auto 0;
+                    display: block;
+                    cursor: pointer;
+                    // ul{
+                    //     display: none;
+                    // }
                 }
             }
         }
@@ -257,10 +257,9 @@
 
                 // padding:0 6% 0 9%;
                 &:hover {
-                    width: 296px;
-                    height: 307px;
-                    top: 888px;
-                    left: 456px;
+                    max-width: 296px;
+                    max-height: 307px;
+
                     border-radius: 20px;
                     background: rgba(53, 115, 110, 0.1);
                     transition-duration: 600ms;
@@ -1783,12 +1782,17 @@
                             padding: 0 20px;
                         }
 
-                        .material-symbols-outlined {
-                            display: block;
-                            size: 32px;
-                            padding: 0 0 0 20px;
-                            font-variation-settings: 'opsz' 32;
-                        }
+                        // .material-symbols-outlined {
+                        //     display: block;
+                        //     size: 32px;
+                        //     padding: 0 0 0 20px;
+                        //     font-variation-settings: 'opsz' 32;
+                        // }
+
+
+                    }
+                    #hamburger-icon{
+                        display: block;
                     }
                 }
             }
@@ -1853,9 +1857,30 @@
                 scroll-behavior: smooth;
                 z-index: 3;
 
+                .item-nordic-chair,
+                .item-kruzo-chair,
+                .item-ergonomic-chair {
+                    height: 64%;
+
+                    &:hover {
+                        height: 50%;
+
+                        h4,
+                        h5 {
+                            transform: translateY(-97px);
+                        }
+                    }
+
+                    .btn-add {
+                        img {
+                            width: 45%;
+                        }
+                    }
+                }
+
                 .item-nordic-chair {
                     img {
-                        width: 80%;
+                        width: 79%;
                     }
                 }
 
@@ -1870,7 +1895,7 @@
                     z-index: 4;
 
                     img {
-                        width: 60%;
+                        width: 70%;
                     }
                 }
             }
@@ -2001,6 +2026,30 @@
 
 
 
+            }
+        }
+    }
+
+    .section-1 {
+        .container {
+            padding: 30px 0 0 0;
+
+            .about-items {
+                margin: 20px 0;
+            }
+
+            .shop-items {
+
+                h4,
+                h5 {
+                    font-size: 14px;
+                }
+
+                .item-ergonomic-chair {
+                    h4 {
+                        padding-top: 0;
+                    }
+                }
             }
         }
     }
@@ -2197,6 +2246,31 @@
         }
     }
 
+    .section-1 {
+        .container {
+            .shop-items {
+
+                .item-nordic-chair,
+                .item-kruzo-chair,
+                .item-ergonomic-chair {
+                    &:hover {
+                        transition-duration: 550ms;
+
+                        .chair-img {
+                            transform: translateY(-70px);
+                        }
+
+                        h4,
+                        h5 {
+                            transform: translateY(-42px);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
     .section-3 {
         padding: 20px 0 110px 0;
     }
@@ -2211,7 +2285,8 @@
                 .item-3-erogonomic {
                     flex-direction: row;
                     width: 100%;
-                    .img-menu{
+
+                    .img-menu {
                         margin-right: 5%;
                     }
                 }
